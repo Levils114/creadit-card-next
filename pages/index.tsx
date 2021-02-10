@@ -87,7 +87,7 @@ export default function Home() {
         />
       )}
     
-      <motion.div initial={!!isToFlip ? {opacity: 0} : {opacity: 1}} animate={!isToFlip ? {opacity: [0,1]} : {}} transition={{duration: 1}} className="w-92 md:w-96 flex items-end justify-end ml-64 md:ml-0 md:pr-1">
+      <motion.div initial={!isToFlip ? {opacity: 0} : {opacity: 1}} animate={{opacity: 1}} transition={{duration: 1}} className="w-92 md:w-96 flex items-end justify-end ml-64 md:ml-0 md:pr-1">
         <button onClick={() => {
             setShowCardBack(!showCardBack)
             setIsToFlip(true)
