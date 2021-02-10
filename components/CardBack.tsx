@@ -14,7 +14,7 @@ interface ICardBack{
 export default function CardBack({ creditCardNumber, validateDate, securityCod, functionToSetCreaditCardNumber, functionToSetSecurityCod, functionToSetValidateDate, isToFlip }: ICardBack){
     return(
         <motion.div initial={!!isToFlip ? {rotateY: 180} : {}} animate={!!isToFlip ? {rotateY: 0, scale: 1} : {}} transition={{duration: 1}} className="flex justify-start items-start flex-col w-92 md:w-96 h-48 md:h-52 bg-gradient-to-r from-purple-600 shadow-2xl rounded-xl py-5 mb-8">
-            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1}} className="w-full h-12 bg-gray-300 mt-3"/>
+            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 1}} className="w-full h-12 bg-gradient-to-r from-gray-300 to-gray-400 mt-3"/>
 
             <motion.input 
                 initial={{opacity: 0}} 

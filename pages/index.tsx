@@ -7,11 +7,7 @@ import { motion } from 'framer-motion';
 
 import { MdRotateRight } from 'react-icons/md';
 
-interface IData{
-  data: object;
-}
-
-export default function Home({ data }: IData) {
+export default function Home() {
   const [showCardBack, setShowCardBack] = useState(false);
 
   const [name, setName] = useState('');
